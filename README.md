@@ -10,9 +10,59 @@ Q \ Separate the **"Even" & "Odd"** numbers between **1 - 20** ? And print it in
 
 - Odd number => number % 2 = 1
 
+1-) Method One :
+
+```dart
+main(){
+  for(var i=1; i<=20; i++){
+    if(i % 2 == 0){
+      print("$i - Even");
+    }else{
+      print("$i - Odd");
+    }
+  }
+}
+```
+
 ****
 
-**Output :**
+2-) Method Two :
+
+```dart
+main() {
+  var i = 1;
+  while (i <= 20) {
+    if (i % 2 == 0) {
+      print("$i - Even");
+    } else {
+      print("$i - Odd");
+    }
+    i++;
+  }
+}
+```
+
+*****
+
+3-) Method Three :
+
+```dart
+main() {
+  var i = 1;
+  do {
+    if (i % 2 == 0) {
+      print("$i - Even");
+    } else {
+      print("$i - Odd");
+    }
+    i++;
+  } while (i <= 20);
+}
+```
+
+****
+
+Output :
 
 ```
 1 - Odd
